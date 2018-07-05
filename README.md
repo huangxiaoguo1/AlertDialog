@@ -2,7 +2,7 @@
 
 ### 效果
 
-![image](file:///android_asset/jdfw.gif)  
+![image](https://raw.githubusercontent.com/huangxiaoguo1/AlertDialog/master/app/src/main/assets/jdfw.gif)  
 
 ### 引用方法
 
