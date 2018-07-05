@@ -4,10 +4,7 @@
 
 ![image](https://raw.githubusercontent.com/huangxiaoguo1/AlertDialog/master/app/src/main/assets/jdfw.gif)  
 
-### 构造函数
 
-    themeResId：样式
-    Builder(Context context, int themResId)
 
 ### 引用方法
 
@@ -59,6 +56,11 @@ AlertDialog dialog = new AlertDialog.Builder(this)
 ```
 
 #### 方法简介（Builder方式链式调用）
+
+### 构造函数
+
+    themeResId：样式
+    Builder(Context context, int themResId)
 
 ###### 传入布局 
 
