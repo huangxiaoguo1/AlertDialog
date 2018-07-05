@@ -2,7 +2,7 @@
 
 ### 效果
 
-[](file:///android_asset/jdfw.gif)
+![image](file:///android_asset/jdfw.gif)  
 
 ### 引用方法
 
