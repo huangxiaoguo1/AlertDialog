@@ -4,6 +4,11 @@
 
 [](file:///android_asset/jdfw.gif)
 
+### 构造函数
+
+    themeResId：样式
+    Builder(Context context, int themResId)
+
 ### 引用方法
 
 ```
