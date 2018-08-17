@@ -78,6 +78,8 @@ class AlertController {
         public int mViewLayoutResId;
         //存放字体的修改
         public SparseArray<CharSequence> mTextArray = new SparseArray<>();
+        //存放隐藏的view
+        public SparseArray<Boolean> mTextShowArray = new SparseArray<>();
         //存放点击事件
         public SparseArray<View.OnClickListener> mClickArray = new SparseArray<>();
         //宽度
@@ -114,7 +116,9 @@ class AlertController {
              * 给dialog设置布局
              */
             mAlert.getDialog().setContentView(viewHelper.getContentView());
-
+            for (int i = 0; i < mTextShowArray.size(); i++) {
+                viewHelper.setShowText(mTextShowArray.keyAt(i), mTextShowArray.valueAt(i));
+            }
             for (int i = 0; i < mTextArray.size(); i++) {
                 viewHelper.setText(mTextArray.keyAt(i), mTextArray.valueAt(i));
             }

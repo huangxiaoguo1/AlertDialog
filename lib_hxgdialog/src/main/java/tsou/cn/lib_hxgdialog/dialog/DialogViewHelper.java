@@ -46,6 +46,23 @@ class DialogViewHelper {
         }
     }
 
+    /**
+     * 显示或隐藏view
+     *
+     * @param viewId
+     * @param aBoolean
+     */
+    public void setShowText(int viewId, Boolean aBoolean) {
+        View view = getView(viewId);
+        if (view != null) {
+            if (aBoolean) {
+                view.setVisibility(View.VISIBLE);
+            } else {
+                view.setVisibility(View.GONE);
+            }
+        }
+    }
+
     public <T extends View> T getView(int viewId) {
         WeakReference<View> weakReference = mViews.get(viewId);
         View view = null;
@@ -81,4 +98,6 @@ class DialogViewHelper {
     public View getContentView() {
         return mContentView;
     }
+
+
 }

@@ -111,6 +111,16 @@ public class AlertDialog extends Dialog {
         }
 
         /**
+         * 是否显示View
+         * @param viewId
+         * @param isShow
+         * @return
+         */
+        public Builder setShowView(int viewId, boolean isShow) {
+            P.mTextShowArray.put(viewId, isShow);
+            return this;
+        }
+        /**
          * 自己的布局监听
          *
          * @param view

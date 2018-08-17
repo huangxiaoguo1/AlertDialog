@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 默认样式
      */
     private Button mBtn1;
+    private AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +37,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
             case R.id.btn1:
-                final AlertDialog dialog = new AlertDialog.Builder(this)
+                dialog = new AlertDialog.Builder(this)
                         .setContentView(R.layout.layout_dialog)
                         .setTitle(R.id.text1, "购物车")
                         .setTitle(R.id.text2, "消息")
                         .setTitle(R.id.btn, "发送")
+                        .setShowView(R.id.text2,false)
                         .setOnClicklistener(R.id.text1, new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
+                                dialog.dismiss();
                                 Toast.makeText(MainActivity.this,"点击了购物车",Toast.LENGTH_LONG).show();
                             }
                         })
