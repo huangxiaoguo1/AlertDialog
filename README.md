@@ -20,7 +20,7 @@ allprojects {
   
 dependencies {
 
-    implementation 'com.github.huangxiaoguo1:AlertDialog:1.1.1'
+    implementation 'com.github.huangxiaoguo1:AlertDialog:1.1.3'
     
 }
   
@@ -91,6 +91,9 @@ AlertDialog dialog = new AlertDialog.Builder(this)
     传入控件的id和监听回调
     setOnClicklistener(int viewId, View.OnClickListener listener)
     
+###### 设置View显示和隐藏
+
+    setShowView(int viewId, boolean isShow)   
 ###### 设置宽度全屏
 
     fullWidth()
